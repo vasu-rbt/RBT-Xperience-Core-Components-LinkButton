@@ -1,0 +1,12 @@
+﻿@using RBT.Xperience.Core.LinkButton
+@model LinkButtonWidgetViewModel
+
+@{
+    string textColor = string.IsNullOrEmpty(Model.LinkTextColor) ? "" : "color:" + Model.LinkTextColor + "!important";
+    string buttonBGColor = string.IsNullOrEmpty(Model.LinkBGColor) ? "" : "background-color:" + Model.LinkBGColor + "!important";
+
+}
+@if (Model.LinkText != null && Model.LinkURL != null && Model.LinkTarget != null)
+{
+    <a href="@Model.LinkURL" target="@Model.LinkTarget" style="@textColor;@buttonBGColor;" class="@Model.LinkCSSClass">@Model.LinkText</a>
+}

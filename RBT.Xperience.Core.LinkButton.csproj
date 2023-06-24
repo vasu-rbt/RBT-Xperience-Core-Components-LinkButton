@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+    <IsMvcProject>true</IsMvcProject>
+    <GenerateEmbeddedFileManifest>true</GenerateEmbeddedFileManifest>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <PackageId>RBT.Xperience.Core.LinkButton</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Vasu Yerramsetti</Authors>
+    <Company>Ray Business Technologies</Company>
+    <Description>Displays a hyperlink to a specified target URL. The link can be rendered in text format.</Description>
+    <Copyright>Ray Business Technologies</Copyright>
+    <PackAsTool>False</PackAsTool>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />  
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Kentico.Xperience.AspNetCore.WebApp" Version="13.0.73" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" Version="2.2.0" />
+  </ItemGroup>
+
+</Project>
